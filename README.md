@@ -1,11 +1,19 @@
 # Installation
 
 ```shell
-pip install code-prompt
+pip install llfmt
 ```
 
 # Usage
 
+Write to `stdout`:
+
 ```shell
-codeprompt file1.py *pattern2*.py directory3/**.py ...
+llfmt file1.py *pattern2*.py directory3/**.py ...
+```
+
+Write to clipboard (on supported systems):
+
+```shell
+llfmt *.py | pbcopy
 ```
